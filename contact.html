@@ -79,57 +79,58 @@
     </div>
     <!-- Page Header End -->
 
-    <!-- Contact Start -->
-    <div class="container-xxl py-5">
-        <div class="container">
-            <div class="row g-5">
-                <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
-                    <h1 class="display-6 mb-5">Se você tiver alguma dúvida, entre em contato conosco</h1>
-                    <p class="mb-4">Estamos aqui para ouvir suas necessidades e oferecer soluções que garantam seu conforto e bem-estar. Preencha o formulário ou ligue para nós, estamos prontos para atendê-lo.</p>
-                    <form>
-                        <div class="row g-3">
-                            <div class="col-md-6">
-                                <div class="form-floating">
-                                    <input type="text" class="form-control" id="name" placeholder="Your Name">
-                                    <label for="name">Seu nome</label>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="form-floating">
-                                    <input type="email" class="form-control" id="email" placeholder="Your Email">
-                                    <label for="email">Seu Email</label>
-                                </div>
-                            </div>
-                            <div class="col-12">
-                                <div class="form-floating">
-                                    <input type="text" class="form-control" id="subject" placeholder="Subject">
-                                    <label for="subject">Assunto</label>
-                                </div>
-                            </div>
-                            <div class="col-12">
-                                <div class="form-floating">
-                                    <textarea class="form-control" placeholder="Leave a message here" id="message" style="height: 100px"></textarea>
-                                    <label for="message">Mensagem</label>
-                                </div>
-                            </div>
-                            <div class="col-12">
-                                <button class="btn btn-primary py-3 px-5" type="submit">Enviar mensagem</button>
+<!-- Contact Start -->
+<div class="container-xxl py-5">
+    <div class="container">
+        <div class="row g-5">
+            <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
+                <h1 class="display-6 mb-5">Se você tiver alguma dúvida, entre em contato conosco</h1>
+                <p class="mb-4">Estamos aqui para ouvir suas necessidades e oferecer soluções que garantam seu conforto e bem-estar. Preencha o formulário ou ligue para nós, estamos prontos para atendê-lo.</p>
+                <form id="contactForm">
+                    <div class="row g-3">
+                        <div class="col-md-6">
+                            <div class="form-floating">
+                                <input type="text" class="form-control" id="name" placeholder="Seu nome" required>
+                                <label for="name">Seu nome</label>
                             </div>
                         </div>
-                    </form>
-                </div>
-                <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s" style="min-height: 450px;">
-                    <div class="position-relative overflow-hidden h-100">
-                        <iframe class="position-relative w-100 h-100"
-                        src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d124552.65796260361!2d-38.41246236143099!3d-12.695755695784182!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x716694564e7c0ad%3A0x7aa53e4adb3b0764!2sR.%20do%20Gravat%C3%A1%20-%20Alto%20da%20Cruz%2C%20Cama%C3%A7ari%20-%20BA%2C%2042803-762!3m2!1d-12.695768399999999!2d-38.330060499999995!5e0!3m2!1spt-BR!2sbr!4v1730518164617!5m2!1spt-BR!2sbr"
-                        frameborder="0" style="min-height: 450px; border:0;" allowfullscreen="" aria-hidden="false"
-                        tabindex="0"></iframe>
+                        <div class="col-md-6">
+                            <div class="form-floating">
+                                <input type="email" class="form-control" id="email" placeholder="Seu email" required>
+                                <label for="email">Seu Email</label>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="form-floating">
+                                <input type="text" class="form-control" id="subject" placeholder="Assunto" required>
+                                <label for="subject">Assunto</label>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="form-floating">
+                                <textarea class="form-control" placeholder="Deixe uma mensagem aqui" id="message" style="height: 100px" required></textarea>
+                                <label for="message">Mensagem</label>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <button class="btn btn-primary py-3 px-5" type="submit">Enviar mensagem</button>
+                        </div>
                     </div>
+                </form>
+            </div>
+            <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s" style="min-height: 450px;">
+                <div class="position-relative overflow-hidden h-100">
+                    <iframe class="position-relative w-100 h-100"
+                    src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d124552.65796260361!2d-38.41246236143099!3d-12.695755695784182!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x716694564e7c0ad%3A0x7aa53e4adb3b0764!2sR.%20do%20Gravat%C3%A1%20-%20Alto%20da%20Cruz%2C%20Cama%C3%A7ari%20-%20BA%2C%2042803-762!3m2!1d-12.695768399999999!2d-38.330060499999995!5e0!3m2!1spt-BR!2sbr!4v1730518164617!5m2!1spt-BR!2sbr"
+                    frameborder="0" style="min-height: 450px; border:0;" allowfullscreen="" aria-hidden="false"
+                    tabindex="0"></iframe>
                 </div>
             </div>
         </div>
     </div>
-    <!-- Contact End -->
+</div>
+<!-- Contact End -->
+
 
     <!-- Footer Start -->
     <div class="container-fluid bg-dark footer mt-5 pt-5 wow fadeIn" data-wow-delay="0.1s">
@@ -187,6 +188,30 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+
+    <script>
+        document.getElementById("contactForm").addEventListener("submit", function(event) {
+            event.preventDefault();
+    
+            // Captura os valores dos campos do formulário
+            var name = document.getElementById("name").value;
+            var email = document.getElementById("email").value;
+            var subject = document.getElementById("subject").value;
+            var message = document.getElementById("message").value;
+    
+            // Formata a mensagem para enviar pelo WhatsApp
+            var whatsappMessage = `*Nome:* ${name}%0A*Email:* ${email}%0A*Assunto:* ${subject}%0A*Mensagem:* ${message}`;
+            
+            // Número de telefone no formato internacional (exemplo para Brasil)
+            var phoneNumber = "4471992777540"; // Substitua com o número de destino (com o código do país)
+            
+            // Cria o link para o WhatsApp com a mensagem
+            var whatsappLink = `https://wa.me/${phoneNumber}?text=${whatsappMessage}`;
+            
+            // Redireciona para o WhatsApp
+            window.open(whatsappLink, "_blank");
+        });
+    </script>
 </body>
 
 </html>
