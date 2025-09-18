@@ -305,114 +305,117 @@
     <!-- Testimonial End -->
     
     <!-- Formulário interativo -->
-    
-    <div class="container py-5" id="serviceForm">
-        <div class="container">
-            
-            <h1 class="display-6 mb-5">Fale Conosco</h1>
-            <p>Para que possamos avaliar corretamente a instalação, você poderia nos responder algumas perguntas?</p>
-            
-            <form class="bg-light p-4 rounded">
-                <!-- Seção: Dados do Cliente -->
-                <div class="row">
-                    <!-- Nome -->
-                    <div class="col-md-6 mb-3">
-                        <div class="form-floating">
-                            <input type="text" class="form-control" id="clientName" placeholder="Digite seu nome" required>
-                            <label for="clientName">Seu nome completo</label>
-                        </div>
-                    </div>
-                    
-                    <!-- Telefone -->
-                    <div class="col-md-6 mb-3">
-                        <div class="form-floating">
-                            <input type="tel" inputmode="tel" class="form-control" id="clientPhone" placeholder="(99) 99999-9999" maxlength="15" required>
-                            <label for="clientPhone">Seu número de telefone</label>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="form-floating mb-3">
-                    <input type="text" class="form-control" id="serviceLocation" placeholder="Digite o endereço" required>
-                    <label for="serviceLocation">Endereço</label>
-                </div>
-                
-                <!-- Seção: Detalhes do Serviço -->
-                <div class="mb-3">
-                    <label for="serviceType" class="form-label">Qual serviço você deseja?</label>
-                    <select id="serviceType" class="form-select" required>
-                        <option value="" disabled selected>Selecione o serviço</option>
-                        <option value="Instalação">Instalação de Ar Condicionado</option>
-                        <option value="Manutenção">Manutenção de Ar Condicionado</option>
-                        <option value="Reparo">Reparo de Equipamentos</option>
-                        <option value="Outros">Outros</option>
-                    </select>
-                </div>
-                
-                <!-- Seção: Perguntas de Instalação -->
-                <hr class="my-4">
-                <h5 class="mb-3">Informações adicionais</h5>
-                
-                <div class="row">
-                    <div class="col-md-6 mb-3">
-                        <label for="deviceStatus" class="form-label">O aparelho é novo ou usado?</label>
-                        <select id="deviceStatus" class="form-select" required>
-                            <option value="" disabled selected>Selecione uma opção</option>
-                            <option value="Novo">Novo</option>
-                            <option value="Usado">Usado</option>
-                        </select>
-                    </div>
-                    
-                    <div class="col-md-6 mb-3">
-                        <label for="electricalPoints" class="form-label">O local já possui ponto(s) elétrico(s)?</label>
-                        <select id="electricalPoints" class="form-select" required>
-                            <option value="" disabled selected>Selecione uma opção</option>
-                            <option value="Sim">Sim</option>
-                            <option value="Não">Não</option>
-                            <option value="Não sei informar">Não sei informar</option>
-                        </select>
-                        <small class="form-text text-muted">
-                            * A empresa não realiza serviços relacionados à elétrica.
-                        </small>
-                    </div>
-                </div>
-                
-                <div class="row">
-                    <div class="col-md-6 mb-3">
-                        <label for="easyAccess" class="form-label">Há acesso fácil ao local da instalação?</label>
-                        <select id="easyAccess" class="form-select" required>
-                            <option value="" disabled selected>Selecione uma opção</option>
-                            <option value="Sim">Sim</option>
-                            <option value="Não">Não</option>
-                        </select>
-                    </div>
-                    
-                    <div class="col-md-6 mb-3">
-                        <label for="replacement" class="form-label">Já existe algum equipamento no local que será substituído?</label>
-                        <select id="replacement" class="form-select" required>
-                            <option value="" disabled selected>Selecione uma opção</option>
-                            <option value="Sim">Sim</option>
-                            <option value="Não">Não</option>
-                        </select>
-                    </div>
-                </div>
-                
-                <div class="mb-3">
-                    <label for="particularities" class="form-label">Há alguma particularidade no local que deveríamos saber?</label>
-                    <textarea 
-                    class="form-control" 
-                    id="particularities" 
-                    style="height: 120px; resize: vertical;" 
-                    placeholder="Ex: altura, restrições de acesso, etc."></textarea>
-                </div>
-                
-                <!-- Botão de envio -->
-                <div class="text-end">
-                    <button type="submit" class="btn btn-primary w-100 w-md-auto">Enviar</button>
-                </div>
-            </form>
+<div class="container-fluid py-5" id="serviceForm">
+  <div class="row justify-content-center">
+    <div class="col-12 col-sm-10 col-md-8 col-lg-6">
+
+      <h1 class="display-6 mb-4">Fale Conosco</h1>
+      <p class="mb-4">Para que possamos avaliar corretamente a instalação, você poderia nos responder algumas perguntas?</p>
+
+      <form class="bg-light p-4 rounded shadow-sm">
+        <!-- Seção: Dados do Cliente -->
+        <div class="row">
+          <!-- Nome -->
+          <div class="col-md-6 mb-3">
+            <div class="form-floating">
+              <input type="text" class="form-control" id="clientName" placeholder="Digite seu nome" required>
+              <label for="clientName">Seu nome completo</label>
+            </div>
+          </div>
+
+          <!-- Telefone -->
+          <div class="col-md-6 mb-3">
+            <div class="form-floating">
+              <input type="tel" inputmode="tel" class="form-control" id="clientPhone" placeholder="(99) 99999-9999" maxlength="15" required>
+              <label for="clientPhone">Seu número de telefone</label>
+            </div>
+          </div>
         </div>
+
+        <!-- Endereço -->
+        <div class="form-floating mb-3">
+          <input type="text" class="form-control" id="serviceLocation" placeholder="Digite o endereço" required>
+          <label for="serviceLocation">Endereço</label>
+        </div>
+
+        <!-- Tipo de serviço -->
+        <div class="mb-3">
+          <label for="serviceType" class="form-label">Qual serviço você deseja?</label>
+          <select id="serviceType" class="form-select" required>
+            <option value="" disabled selected>Selecione o serviço</option>
+            <option value="Instalação">Instalação de Ar Condicionado</option>
+            <option value="Manutenção">Manutenção de Ar Condicionado</option>
+            <option value="Reparo">Reparo de Equipamentos</option>
+            <option value="Outros">Outros</option>
+          </select>
+        </div>
+
+        <!-- Informações adicionais -->
+        <hr class="my-4">
+        <h5 class="mb-3">Informações adicionais</h5>
+
+        <div class="row">
+          <div class="col-md-6 mb-3">
+            <label for="deviceStatus" class="form-label">O aparelho é novo ou usado?</label>
+            <select id="deviceStatus" class="form-select" required>
+              <option value="" disabled selected>Selecione uma opção</option>
+              <option value="Novo">Novo</option>
+              <option value="Usado">Usado</option>
+            </select>
+          </div>
+
+          <div class="col-md-6 mb-3">
+            <label for="electricalPoints" class="form-label">O local já possui ponto(s) elétrico(s)?</label>
+            <select id="electricalPoints" class="form-select" required>
+              <option value="" disabled selected>Selecione uma opção</option>
+              <option value="Sim">Sim</option>
+              <option value="Não">Não</option>
+              <option value="Não sei informar">Não sei informar</option>
+            </select>
+            <small class="form-text text-muted">
+              * A empresa não realiza serviços relacionados à elétrica.
+            </small>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-6 mb-3">
+            <label for="easyAccess" class="form-label">Há acesso fácil ao local da instalação?</label>
+            <select id="easyAccess" class="form-select" required>
+              <option value="" disabled selected>Selecione uma opção</option>
+              <option value="Sim">Sim</option>
+              <option value="Não">Não</option>
+            </select>
+          </div>
+
+          <div class="col-md-6 mb-3">
+            <label for="replacement" class="form-label">Já existe algum equipamento no local que será substituído?</label>
+            <select id="replacement" class="form-select" required>
+              <option value="" disabled selected>Selecione uma opção</option>
+              <option value="Sim">Sim</option>
+              <option value="Não">Não</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="mb-3">
+          <label for="particularities" class="form-label">Há alguma particularidade no local que deveríamos saber?</label>
+          <textarea 
+            class="form-control" 
+            id="particularities" 
+            style="height: 120px; resize: vertical;" 
+            placeholder="Ex: altura, restrições de acesso, etc."></textarea>
+        </div>
+
+        <!-- Botão de envio -->
+        <div class="text-end">
+          <button type="submit" class="btn btn-primary w-100 w-md-auto">Enviar</button>
+        </div>
+      </form>
     </div>
+  </div>
+</div>
+
     
     
     <!-- Finaliza formulário interativo -->
