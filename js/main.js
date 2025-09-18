@@ -172,7 +172,7 @@ document.addEventListener('DOMContentLoaded', function () {
         const mensagemCodificada = encodeURIComponent(mensagem);
 
         // ⚠️ Substitua pelo número real do seu WhatsApp (com DDI + DDD + número)
-        const numeroWhatsApp = "557199222-3788";
+        const numeroWhatsApp = "5571992223788";
 
         // ✅ Criar link e abrir o WhatsApp
         const linkWhatsApp = `https://wa.me/${numeroWhatsApp}?text=${mensagemCodificada}`;
