@@ -105,7 +105,9 @@
                                 <div class="col-lg-7 pt-5">
                                     <h1 class="display-4 text-white mb-4 animated slideInDown">Nós fornecemos os melhores serviços de reparo de AC</h1>
                                     <p class="fs-5 text-body mb-4 pb-2 mx-sm-5 animated slideInDown">Sua escolha confiável para serviços de ar condicionado!</p>
-                                    <a href="https://api.whatsapp.com/send?phone=5571999851376&text=Ol%C3%A1!%20Vim%20atrav%C3%A9s%20do%20site%20e%20desejo%20um%20or%C3%A7amento%20de%20servi%C3%A7o..." class="btn btn-primary py-3 px-5 animated slideInDown fab fa-whatsapp"> Solicite um orçamento</a>
+                                    <a href="#serviceForm" class="btn btn-primary py-3 px-5 animated slideInDown btn-pulse">
+                                        Solicite atendimento
+                                    </a>
                                 </div>
                             </div>
                         </div>
@@ -119,7 +121,9 @@
                                 <div class="col-lg-7 pt-5">
                                     <h1 class="display-4 text-white mb-4 animated slideInDown">Serviços de aquecimento e ar condicionado de qualidade</h1>
                                     <p class="fs-5 text-body mb-4 pb-2 mx-sm-5 animated slideInDown">Nossa equipe especializada oferece instalação, manutenção e reparos eficientes.</p>
-                                    <a href="https://api.whatsapp.com/send?phone=5571999851376&text=Ol%C3%A1!%20Vim%20atrav%C3%A9s%20do%20site%20e%20desejo%20um%20or%C3%A7amento%20de%20servi%C3%A7o..." class="btn btn-primary py-3 px-5 animated slideInDown fab fa-whatsapp"> Solicite um orçamento </a>
+                                    <a href="#serviceForm" class="btn btn-primary py-3 px-5 animated slideInDown btn-pulse">
+                                        Solicite atendimento
+                                    </a>
                                 </div>
                             </div>
                         </div>
@@ -301,14 +305,14 @@
     <!-- Testimonial End -->
     
     <!-- Formulário interativo -->
-    <meta name="viewport" content="width=device-width, initial-scale=1">
     
-    <div class="container py-5">
+    <div class="container py-5" id="serviceForm">
         <div class="container">
+            
             <h1 class="display-6 mb-5">Fale Conosco</h1>
             <p>Para que possamos avaliar corretamente a instalação, você poderia nos responder algumas perguntas?</p>
             
-            <form id="serviceForm" class="bg-light p-4 rounded">
+            <form class="bg-light p-4 rounded">
                 <!-- Seção: Dados do Cliente -->
                 <div class="row">
                     <!-- Nome -->
@@ -327,7 +331,7 @@
                         </div>
                     </div>
                 </div>
-                                
+                
                 <div class="form-floating mb-3">
                     <input type="text" class="form-control" id="serviceLocation" placeholder="Digite o endereço" required>
                     <label for="serviceLocation">Endereço</label>
